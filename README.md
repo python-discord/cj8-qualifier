@@ -43,6 +43,7 @@ For the qualifier, you are required to write a function that creates and returns
 Your table must use these characters for the border. `│ ─ ┌ ┬ ┐ ├ ┼ ┤ └ ┴ ┘`
   - Length of rows will always equal the length of labels
   - No item in any row will contain an escape character such as `\n`
+  - If an item cannot be centered evenly, the extra space character should be to the right of the item (see example 3)
 
 ### Function Signature
 ```py
