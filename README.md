@@ -41,9 +41,10 @@ Your code will be tested with a multitude of tests to test all aspects of your c
 
 For the qualifier, you are required to write a function that creates and returns an ascii table.
 Your table must use these characters for the border. `│ ─ ┌ ┬ ┐ ├ ┼ ┤ └ ┴ ┘`
-  - Length of rows will always equal the length of labels
-  - No item in any row will contain an escape character such as `\n`
+  - Length of each row will always equal the length of labels (if labels are provided) for the input data
+  - No item in any row will contain an escape character such as `\n` for the input data
   - If an item cannot be centered evenly, the extra space character should be to the right of the item (see example 3)
+  - Each column should be made wide enough to fit the longest item, with one space on either side for padding
 
 ### Function Signature
 ```py
@@ -65,15 +66,15 @@ This example shows the function being used to create a single column table. Each
 to fit the longest item with one space either side.
 
 ```py
->>> table = make_table(
-...     rows=[
-...         ["Lemon"],
-...         ["Sebastiaan"],
-...         ["KutieKatj9"],
-...         ["Jake"],
-...         ["Not Joe"]
-...     ]
-... )
+table = make_table(
+    rows=[
+        ["Lemon"],
+        ["Sebastiaan"],
+        ["KutieKatj9"],
+        ["Jake"],
+        ["Not Joe"]
+    ]
+)
 >>> print(table)
 ┌────────────┐
 │ Lemon      │
@@ -90,16 +91,16 @@ This example shows a table with three columns, each column is wide enough to fit
 space either side. The labels are place independently at the top of each column to give them a clearer meaning.
 
 ```py
->>> table = make_table(
-...     rows=[
-...         ["Lemon", 18_3285, "Owner"],
-...         ["Sebastiaan", 18_3285.1, "Owner"],
-...         ["KutieKatj", 15_000, "Admin"],
-...         ["Jake", "MoreThanU", "Helper"],
-...         ["Joe", -12, "Idk Tbh"]
-...     ],
-...     labels=["User", "Messages", "Role"]
-... )
+table = make_table(
+    rows=[
+        ["Lemon", 18_3285, "Owner"],
+        ["Sebastiaan", 18_3285.1, "Owner"],
+        ["KutieKatj", 15_000, "Admin"],
+        ["Jake", "MoreThanU", "Helper"],
+        ["Joe", -12, "Idk Tbh"]
+    ],
+    labels=["User", "Messages", "Role"]
+)
 >>> print(table)
 ┌────────────┬───────────┬─────────┐
 │ User       │ Messages  │ Role    │
