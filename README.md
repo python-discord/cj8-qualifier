@@ -4,7 +4,7 @@ To qualify for the upcoming Summer Code Jam, you'll have to complete a qualifier
 been tasked to create a function that makes a table with columns and rows.
 
 Please read the instructions carefully and submit your solution before the deadline using the
-[sign-up form](pydis.com/codejam-8).
+[sign-up form](https://form.jotform.com/211714357615050).
 
 # Table of Contents
 
@@ -19,7 +19,7 @@ Please read the instructions carefully and submit your solution before the deadl
 
 # Qualifying for the Code Jam
 
-To qualify for the Code Jam you will be required to upload your submission to the [sign-up form](pydis.com/codejam-8).
+To qualify for the Code Jam you will be required to upload your submission to the [sign-up form](https://form.jotform.com/211714357615050).
 We set up our test suite so you don't have to worry about setting one up yourself.
 
 Your code will be tested with a multitude of tests to test all aspects of your code making sure it works.
