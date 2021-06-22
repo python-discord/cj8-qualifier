@@ -88,7 +88,7 @@ table = make_table(
 ### Example 2
 
 This example shows a table with three columns, each column is wide enough to fit the largest item of column with a
-space either side. The labels are place independently at the top of each column to give them a clearer meaning.
+space either side. The labels are placed independently at the top of each column to give them a clearer meaning.
 
 ```py
 table = make_table(
