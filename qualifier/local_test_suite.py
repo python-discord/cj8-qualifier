@@ -7,7 +7,7 @@ Run using `python -m unittest local_test_suit.py`.
 You must have the qualifier in the same working directory.
 """
 
-from typing import Any, List
+from typing import Any, List, Optional
 import unittest
 from dataclasses import dataclass
 
@@ -17,7 +17,7 @@ from qualifier import make_table
 @dataclass
 class TableParams:
     rows: List[List[Any]]
-    labels: List[Any] = None
+    labels: Optional[List[Any]] = None
     centered: bool = False
 
     def __repr__(self):
