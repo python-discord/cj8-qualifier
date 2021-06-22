@@ -22,7 +22,7 @@ class TableParams:
 
     def __repr__(self):
         """Used for putting in a dict."""
-        return f"{self.rows=}{self.labels=}{self.centered=}"
+        return f"self.rows={self.rows}self.labels={self.labels}self.centered={self.centered}"
 
 
 class MakeTableTests(unittest.TestCase):
