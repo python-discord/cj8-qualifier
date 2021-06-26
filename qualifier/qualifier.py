@@ -1,6 +1,5 @@
 from typing import Any, List, Optional
 
-
 def make_table(rows: List[List[Any]], labels: Optional[List[Any]] = None, centered: bool = False) -> str:
     """
     :param rows: 2D list containing objects that have a single-line representation (via `str`).
